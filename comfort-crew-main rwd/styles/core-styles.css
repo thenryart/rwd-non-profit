@@ -1,0 +1,420 @@
+body{
+    font-family: "PT Sans", sans-serif !important;
+    background: #0A3161;
+    color: #fff;
+    margin: 0 36px 36px;
+}
+
+div.mainContent{
+    width: 100%;
+}
+
+/* Button Styling */
+button{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border: transparent;
+    box-shadow: 0 8px 12px #000;
+}
+
+div.heading {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+div.heading > div.headerImg, div.heading > div.pageMenu, div.heading > div.headerDonate {
+    flex: 100%;
+}
+
+div.heading > div.pageMenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.heading > div.headerImg, div.heading > div.pageMenu, div.heading > div.headerDonate{
+    margin: 12px;
+}
+
+button.donateButton {
+    width: 260px;
+    height: 65px;
+    font-size: 36px;
+    background-color: #F2A413;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+button.donateButton:hover {
+    background-color: #c2820a;
+}
+
+div.heading > div.pageMenu > button{
+    background: transparent;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 28px;
+    border-bottom: 2px solid white;
+    margin: 0 25%;
+    box-shadow: none;
+    flex: 100%;
+}
+
+div.heading > div.pageMenu > button:hover {
+    border-bottom: 2px solid #F2A413;
+}
+
+
+/* Mission Section */
+div.heroImage > img{
+    width: 100%;
+    margin: auto;
+}
+
+div.heroImage::after {
+    /*background-image: linear-gradient(180deg, rgba(217, 217, 217, 0) 37.5%, #0A3161 92.71%);*/
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #0A3161 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+
+div.heroText{
+    position: absolute;
+    top: 448px;
+    left: 93px;
+    font-size: 36px;
+    width: 215px;
+}
+
+div.heroSection > button{
+    position: absolute;
+    top: 568px;
+    left: 56px;
+}
+
+div.missionSection{
+    position: absolute;
+    margin: 0 4%;
+}
+
+div.missionSection > h1{
+    font-size: 50px;
+    margin: -28px 0 28px 0;
+    border-bottom: 2px solid #F2A413;
+    width: 575px;
+}
+
+
+/* Reach Section */
+div.reachSection{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #fff;
+    margin: 156px 0 36px;
+    color: #0A3161;
+    width: 100%;
+}
+
+div.reachText{
+    flex: 100%;
+    padding: 23px;
+    margin: auto;
+}
+
+div.reachText > h2 {
+    font-size: 48px;
+}
+
+div.reachText > p {
+    font-size: 24px;
+}
+
+div.reachImg{
+    flex: 100%;
+}
+
+div.reachImg > img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Cards Section */
+div.cardsSection{
+    position: relative;
+    display: grid;
+    width: 100%;
+    gap: 36px;
+    margin-bottom: 36px;
+}
+
+div.cardsSection > div.card {
+    width: 100%;
+    text-align: center;
+}
+
+div.cardsSection > div.cardOne {
+    grid-column: 1 / span 1;
+}
+
+div.cardsSection > div.cardTwo {
+    grid-column: 1 / span 1;
+}
+
+div.cardsSection > div.cardThree {
+    grid-column: 1 / span 1;
+}
+
+div.cardsSection > div.card > img{
+    /*width: 96%;*/
+    /*margin: 12px;*/
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+div.cardsSection > div.card > button, div.footerTableCell > button{
+    position: relative;
+    top: -108px;
+    width: 55%;
+    height: 65px;
+    font-size: 36px;
+    background-color: #0A3161;
+    border-radius: 12px;
+    opacity: 1;
+    color: #fff;
+}
+
+div.cardsSection > div.card > button:hover, div.footerTableCell > button:hover{
+    background-color: #1152a2;
+}
+
+
+/* Footer */
+footer{
+    background-color: #8AB4E9;
+    color: #0A3161;
+    padding: 12px 0 24px;
+}
+
+footer > h3 {
+    text-align: center;
+    font-size: 36px;
+}
+
+div.partnerLogos {
+    width: 100%;
+    margin: 60px 36px;
+    text-align: center;
+}
+
+div.partnerLogos > img {
+    padding: 0 48px;
+}
+
+div.footerTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.footerTable > div.footerTableCell {
+    flex: 100%;
+    text-align: center;
+    color: #000;
+    line-height: 32px;
+}
+
+div.footerTable > div.footerTableCell > h4{
+    font-size: 18px;
+}
+
+div.footerTable > div.footerTableCell > img.imgRowOne {
+    padding: 0 28px;
+}
+
+div.footerTableCell > button {
+    position: inherit;
+    font-size: 24px;
+    width: 40%;
+    height: 50px;
+}
+
+input[type=text] {
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    padding: 6px;
+}
+
+@media (min-width: 768px) {
+    div.heading > div.headerImg, div.heading > div.pageMenu, div.heading > div.headerDonate {
+        flex: 100%;
+    }
+
+    div.heading > div.pageMenu > button{
+        flex: 45%;
+        margin: 4px 0.5%;
+    }
+
+    div.pageMenu, div.headerDonate{
+        margin: auto;
+    }
+
+    div.heroImage > img{
+        width: 100%;
+        margin: auto;
+    }
+
+    div.heroSection > button{
+        top: 528px;
+        left: 56px;
+    }
+
+    div.heroText{
+        top: 388px;
+        left: 86px;
+        font-size: 36px;
+        width: 215px;
+    }
+
+    div.missionSection{
+        position: absolute;
+        margin: 0 4%;
+    }
+
+    div.reachText{
+        flex: 100%;
+    }
+
+    div.reachImg{
+        flex: 100%;
+    }
+
+    div.footerTable > div.footerTableCell {
+        flex: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    div.heading > div.pageMenu {
+        flex: 45%;
+    }
+
+    div.heading > div.headerImg, div.heading > div.headerDonate, div.heading > div.pageMenu > button {
+        flex: 20%;
+    }
+
+    div.heading > div.pageMenu > button {
+        margin: auto .5%;
+    }
+
+    div.heading > div.pageMenu > button, div.heading > div.headerDonate {
+        margin: auto .5%;
+    }
+
+    div.heroText{
+        top: 244px;
+        left: 75px;
+        font-size: 64px;
+        width: 387px;
+    }
+
+    div.heroImage > img{
+        width: 100%;
+        margin: auto;
+    }
+
+    div.heroSection > button{
+        top: 492px;
+        left: 88px;
+    }
+
+    div.missionSection{
+        margin: 0 4%;
+    }
+
+    div.reachText{
+        flex: 100%;
+    }
+
+    div.reachImg{
+        flex: 100%;
+    }
+
+    div.cardsSection > div.cardOne {
+        grid-column: 1 / span 1;
+    }
+
+    div.cardsSection > div.cardTwo {
+        grid-column: 2 / span 1;
+    }
+
+    div.cardsSection > div.cardThree {
+        grid-column: 3 / span 1;
+    }
+
+    div.footerTable > div.footerTableCell {
+        flex: 25%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    div.heroText{
+        top: 350px;
+        left: 250px;
+        font-size: 108px;
+        width: 500px;
+    }
+
+    div.heroImage > img{
+        width: 100%;
+        margin: auto;
+    }
+
+    div.heroSection > button{
+        top: 516px;
+        left: 214px;
+    }
+
+    div.heroText{
+        top: 176px;
+        left: 94px;
+        font-size: 108px;
+        width: 500px;
+    }
+
+    div.missionSection{
+        margin: 0 4%;
+    }
+
+    div.reachText{
+        flex: 38%;
+    }
+
+    div.reachImg{
+        flex: 58%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    div.heroText {
+        top: 208px;
+        left: 142px;
+        font-size: 108px;
+    }
+    div.heroSection > button{
+        top: 614px;
+        left: 250px;
+    }
+}
